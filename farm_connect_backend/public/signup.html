@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Farm Connect Sign Up</title>
+  <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <div class="signup-container">
+    <h1>Sign Up</h1>
+    <form action="/signup" method="POST">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" id="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required minlength="8">
+      </div>
+      
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" name="confirm-password" id="confirm-password" required minlength="8">
+      </div>
+      
+      <button type="submit">Sign Up</button>
+    </form>
+    
+    <p>Already have an account? <a href="login.html">Login Here</a></p>
+  </div>
+</body>
+</html>

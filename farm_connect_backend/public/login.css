@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7; /* Light background */
+    font-family: 'Arial', sans-serif; /* Use a clean font */
+    margin: 0;
+}
+
+.form-container {
+    background-color: white; /* White background for the form */
+    padding: 2rem;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 350px; /* Set width for the form */
+}
+
+.title {
+    font-size: 24px; /* Larger title */
+    margin-bottom: 1.5rem; /* Space below title */
+    text-align: center; /* Center the title */
+    color: #333; /* Dark text color */
+}
+
+.input-group {
+    margin-bottom: 1rem; /* Space between input fields */
+}
+
+.label {
+    font-size: 14px; /* Font size for labels */
+    color: #555; /* Medium grey color for labels */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Space inside inputs */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded borders */
+    transition: border 0.3s; /* Transition effect */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #5cb85c; /* Green border on focus */
+}
+
+button.sign {
+    width: 100%; /* Full width button */
+    padding: 10px; /* Space inside button */
+    background-color: #5cb85c; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded borders */
+    font-size: 16px; /* Font size for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+button.sign:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+}
+
+.social-message {
+    display: flex; /* Flex layout */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+    margin: 1.5rem 0; /* Space above and below */
+}
+
+.line {
+    flex: 1; /* Take available space */
+    border: 1px solid #ccc; /* Line color */
+}
+
+.message {
+    padding: 0 10px; /* Space around message */
+    color: #555; /* Medium grey for message text */
+}
+
+.social-icons {
+    display: flex; /* Flex layout for icons */
+    justify-content: center; /* Center icons */
+    margin: 1rem 0; /* Space around */
+}
+
+.icon {
+    background: none; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    margin: 0 5px; /* Space between icons */
+}
+
+.signup {
+    text-align: center; /* Center signup message */
+    color: #555; /* Medium grey */
+}
+
+.signup a {
+    color: #5cb85c; /* Green link color */
+    text-decoration: none; /* No underline */
+}
+
+.signup a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

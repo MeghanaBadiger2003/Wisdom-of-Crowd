@@ -1,0 +1,98 @@
+#about-project {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#about-project h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2d572c;
+}
+
+#about-project p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#about-project ul {
+    list-style: none;
+    padding: 0;
+}
+
+#about-project ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    background-color: #eaeaea;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#about-project .cta-btn {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: #3a9d34;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#about-project .cta-btn:hover {
+    background-color: #2d572c;
+}
+/* General Styling for Navigation Bar */
+nav {
+    background-color: #2d572c;  /* Dark Green Background */
+    padding: 15px 0;            /* Padding to give it space */
+}
+
+nav .container {
+    display: flex;              /* Flexbox for easy alignment */
+    justify-content: space-between;  /* Space between brand and links */
+    align-items: center;        /* Align vertically in the center */
+}
+
+nav h1 {
+    color: #fff;                /* White text for the brand name */
+    margin-left: 20px;          /* Some left margin for spacing */
+}
+
+nav ul {
+    list-style: none;           /* Remove bullet points */
+    display: flex;              /* Display list items inline */
+    margin-right: 20px;         /* Right margin for spacing */
+}
+
+nav ul li {
+    margin-right: 20px;         /* Space between list items */
+}
+
+nav ul li a {
+    color: white;               /* White text for the links */
+    font-size: 1.1rem;          /* Slightly larger font size */
+    padding: 10px 15px;         /* Padding inside each link */
+    border-radius: 5px;         /* Rounded corners */
+    transition: background 0.3s, color 0.3s; /* Smooth hover transition */
+}
+
+/* Hover Effect for Navigation Links */
+nav ul li a:hover {
+    background-color: #3a9d34;  /* Change background on hover */
+    color: #fff;                /* Ensure text color stays white */
+}
+
+/* Responsive Styling for Small Screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;   /* Stack list items vertically */
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;      /* Add bottom margin to stack items */
+    }
+}
+

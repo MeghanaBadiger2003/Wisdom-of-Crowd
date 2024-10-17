@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Farmers Crowd-Sourced Database</title>
+    <link rel="stylesheet" href="/index2.css"> <!-- Ensure CSS is served correctly -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <h1>Farm Connect 🌾</h1>
+            <ul>
+                <li><a href="/">Home</a></li> <!-- Link to the home page -->
+                <li><a href="/dashboard">Dashboard</a></li> <!-- Assuming you have a dashboard route -->
+                <li><a href="/products">Products</a></li> <!-- Assuming you have a products route -->
+                <li>
+                    <select id="menu" name="menu">
+                        <option value="home">username</option>
+                        <option value="about">About</option>
+                        <option value="services">Settings</option>
+                        <option value="logout">Log Out</option> <!-- Changed value to 'logout' -->
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </nav>  
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Connect Farmers, Share Knowledge</h2>
+            <p>Find solutions for better yields and farming practices, straight from fellow farmers.</p>
+            <a href="/project-explanation" class="cta-btn">Get Started</a> <!-- Make sure the /project-explanation route is defined -->
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <div class="feature-card">
+                <i class="fas fa-seedling fa-3x"></i>
+                <h3>Best Seeds</h3>
+                <p>Find the best seeds that farmers are using for high yields.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-bug fa-3x"></i>
+                <h3>Pest Solutions</h3>
+                <p>Diagnose common pests and find remedies used by farmers.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-disease fa-3x"></i>
+                <h3>Disease Diagnosis</h3>
+                <p>Get insights on crop diseases and how to prevent or treat them.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Farm Connect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript to handle the logout -->
+    <script>
+        const menu = document.getElementById('menu');
+        menu.addEventListener('change', function() {
+            if (this.value === 'logout') {
+                // Send a POST request to the logout route
+                fetch('/logout', {
+                    method: 'POST',
+                })
+                .then(response => {
+                    if (response.ok) {
+                        window.location.href = '/'; // Redirect to index.html
+                    }
+                })
+                .catch(error => console.error('Error during logout:', error));
+            }
+        });
+    </script>
+</body>
+</html>

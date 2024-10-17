@@ -1,0 +1,158 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    background: url('/farm_connect_backend/asstets/dan-morris-NOJfliU8w9Q-unsplash.jpg') no-repeat center center fixed; /* Set the background image */
+    background-size: cover; /* Cover the entire viewport */
+    color: #333;
+
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Navigation */
+nav {
+    background-color: #2d572c;
+    padding: 10px 0;
+}
+
+nav h1 {
+    float: left;
+    color: white;
+    margin-left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #3a9d34;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+#hero {
+    background: url('https://cdn.pixabay.com/photo/2018/03/15/23/39/field-3235455_1280.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    background-color: #3a9d34;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #2d572c;
+}
+
+/* Features Section */
+#features {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #eaeaea;
+    margin: 20px;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.feature-card i {
+    margin-bottom: 20px;
+    color: #2d572c;
+}
+
+.feature-card h3 {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #2d572c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+/* Dropdown Menu */
+/* Dropdown Menu */
+nav ul li select {
+    padding: 10px;
+    border: none;
+    background-color: transparent; /* No background color initially */
+    color: white; /* Default text color */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s; /* Smooth transition on hover */
+    border-radius: 8px;
+}
+
+nav ul li select:hover {
+    background-color: #4db848; /* Changes to green on hover */
+    color: white; /* Text color changes to white on hover */
+}
+
+nav ul li select option {
+    background-color: #ffffff; /* Background for dropdown options */
+    color: #2d572c; /* Option text color */
+}
